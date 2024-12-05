@@ -3,59 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salão Luxo</title>
+  <title>Essence Studio - Tati Goellner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="../assets/favicon/android-chrome-192x192.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    nav {
-  background-color: #444;
-  color: white;
-  padding: 0.5rem 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0;
+    /* Configuração Básica */
+body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
-nav a {
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Apresentação */
+.hero {
+  background: url('../assets/img/logotipo.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  text-decoration: none;
+  position: relative;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Certificados */
+.certifications {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.certificates-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.certificate img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Galeria */
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Contato */
+.contact {
+  padding: 2rem;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  max-width: 400px;
+}
+
+.contact .btn {
+  background: #ff6f61;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#services">Serviços</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
-  </nav>
-  <header id="about">
-    <h1>Salão Luxo</h1>
-    <p>Transformando vidas através da beleza.</p>
+  <!-- Apresentação -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Essence Studio</h1>
+      <p>Realçando sua beleza com excelência e sofisticação.</p>
+    </div>
   </header>
-  <main>
-    <section id="services">
-      <h2>Nossos Serviços</h2>
-      <p>Oferecemos os melhores tratamentos para você.</p>
-    </section>
-    <section id="contact">
-      <h2>Contato</h2>
-      <p>Email: contato@salaoluxo.com</p>
-    </section>
-  </main>
+
+  <!-- Certificados e Especializações -->
+  <section class="certifications">
+    <h2>Certificados & Especializações</h2>
+    <div class="certificates-grid">
+      <div class="certificate">
+        <img src="certificate1.jpg" alt="Certificado 1">
+        <p>Especialização em Lash Lifting</p>
+      </div>
+      <div class="certificate">
+        <img src="certificate2.jpg" alt="Certificado 2">
+        <p>Volume Russo Avançado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Produtos -->
+  <section class="gallery">
+    <h2>Galeria de Produtos & Serviços</h2>
+    <div class="gallery-grid">
+      <div class="product">
+        <img src="product1.jpg" alt="Produto 1">
+        <h3>Alongamento Clássico</h3>
+        <p>Um estilo natural para destacar seus cílios.</p>
+        <p class="price">R$ 150</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Produto 2">
+        <h3>Volume Russo</h3>
+        <p>Cílios volumosos para um olhar marcante.</p>
+        <p class="price">R$ 200</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact">
+    <h2>Entre em Contato</h2>
+    <p>Agende seu atendimento agora mesmo!</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <input type="tel" name="phone" placeholder="Seu Telefone" required>
+      <textarea name="message" placeholder="Sua Mensagem"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p>Ou fale conosco pelo WhatsApp: <a href="https://wa.me/554996492573">Clique Aqui</a></p>
+  </section>
+
   <footer>
-    <p>&copy; 2024 Salão Luxo</p>
+    <p>&copy; 2024 Essence Studio - Tati Goellner. Todos os direitos reservados.  - Desenvolvido por <i><a style="color: red;" href="https://www.instagram.com/sergiobole/">@SergioBole</a></i></p>
   </footer>
 </body>
 </html>
