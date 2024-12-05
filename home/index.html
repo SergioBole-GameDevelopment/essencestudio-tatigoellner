@@ -1,188 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Essence Studio - Tati Goellner</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="shortcut icon" href="../assets/favicon/android-chrome-192x192.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* Configuração Básica */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Apresentação */
-.hero {
-  background: url('../assets/img/logotipo.jpg') center/cover no-repeat;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  position: relative;
-}
-
-
-
-/* Certificados */
-.certifications {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.certificates-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.certificate img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Galeria */
-.gallery {
-  padding: 2rem;
-  text-align: center;
-}
-
-.gallery-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.product img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.product {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #ff6f61;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Contato */
-.contact {
-  padding: 2rem;
-  background: #f7f7f7;
-  text-align: center;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: auto;
-  max-width: 400px;
-}
-
-.contact .btn {
-  background: #ff6f61;
-  color: white;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Rodapé */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
+    /* Estilos personalizados */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #444;
+    }
+    .banner {
+      background: url('../assets/img/logotipo.jpg') no-repeat center center/cover;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    .services-section {
+      padding: 4rem 0;
+    }
+    .service-card img {
+      border-radius: 10px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .service-card h5 {
+      margin-top: 1rem;
+    }
+    .carousel-inner img {
+      height: 450px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .btn-custom {
+      background-color: #ff6f61;
+      color: white;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+    }
+    .btn-custom:hover {
+      background-color: #ff5146;
+    }
   </style>
 </head>
 <body>
-  <!-- Apresentação -->
-  <header class="hero">
-    <div class="overlay">
-      <h1>Essence Studio</h1>
-      <p>Realçando sua beleza com excelência e sofisticação.</p>
-    </div>
-  </header>
-
-  <!-- Certificados e Especializações -->
-  <section class="certifications">
-    <h2>Certificados & Especializações</h2>
-    <div class="certificates-grid">
-      <div class="certificate">
-        <img src="certificate1.jpg" alt="Certificado 1">
-        <p>Especialização em Lash Lifting</p>
-      </div>
-      <div class="certificate">
-        <img src="certificate2.jpg" alt="Certificado 2">
-        <p>Volume Russo Avançado</p>
-      </div>
-    </div>
+  <!-- Banner -->
+  <section class="banner">
   </section>
-
-  <!-- Galeria de Produtos -->
-  <section class="gallery">
-    <h2>Galeria de Produtos & Serviços</h2>
-    <div class="gallery-grid">
-      <div class="product">
-        <img src="product1.jpg" alt="Produto 1">
-        <h3>Alongamento Clássico</h3>
-        <p>Um estilo natural para destacar seus cílios.</p>
-        <p class="price">R$ 150</p>
-        <a href="#" class="btn">Saiba Mais</a>
+  <center>
+    
+    <div>
+      <h1>Bem-vindo ao Essence Studio</h1>
+      <p>Transforme seu olhar com nossos serviços especializados em Lash Design</p>
+      <a href="#services" class="btn btn-custom">Explore Nossos Serviços</a>
+    </div>
+    
+  </center>
+  <!-- Carrossel -->
+  <div id="studioCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/img/img1.jpg" class="d-block w-100" alt="Serviço 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Alongamento Clássico</h5>
+          <p>Elegância e naturalidade para realçar seu olhar.</p>
+        </div>
       </div>
-      <div class="product">
-        <img src="product2.jpg" alt="Produto 2">
-        <h3>Volume Russo</h3>
-        <p>Cílios volumosos para um olhar marcante.</p>
-        <p class="price">R$ 200</p>
-        <a href="#" class="btn">Saiba Mais</a>
+      <div class="carousel-item">
+        <img src="../assets/img/img1.jpg" class="d-block w-100" alt="Serviço 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Volume Russo</h5>
+          <p>Cílios volumosos e impactantes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/img1.jpg" class="d-block w-100" alt="Serviço 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lash Lifting</h5>
+          <p>Curvatura natural e destacada para seus cílios.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#studioCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#studioCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Serviços -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row">
+        <!-- Serviço 1 -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="../assets/img/img1.jpg" class="card-img-top" alt="Serviço 1">
+            <div class="card-body text-center">
+              <h5>Alongamento Clássico</h5>
+              <p>Cílios discretos e naturais para um olhar elegante.</p>
+              <p class="text-danger">R$ 150</p>
+              <a href="https://wa.me/554996492573?text=Quero%20saber%20mais%20sobre%20o%20Alongamento%20Clássico." class="btn btn-custom">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Serviço 2 -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="../assets/img/img1.jpg" class="card-img-top" alt="Serviço 2">
+            <div class="card-body text-center">
+              <h5>Volume Russo</h5>
+              <p>Cílios impactantes para um olhar poderoso.</p>
+              <p class="text-danger">R$ 200</p>
+              <a href="https://wa.me/554996492573?text=Quero%20saber%20mais%20sobre%20o%20Volume%20Russo." class="btn btn-custom">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Serviço 3 -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="../assets/img/img1.jpg" class="card-img-top" alt="Serviço 3">
+            <div class="card-body text-center">
+              <h5>Lash Lifting</h5>
+              <p>Curvatura natural para destacar seus cílios.</p>
+              <p class="text-danger">R$ 100</p>
+              <a href="https://wa.me/554996492573?text=Quero%20saber%20mais%20sobre%20o%20Lash%20Lifting." class="btn btn-custom">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contato -->
-  <section class="contact">
-    <h2>Entre em Contato</h2>
-    <p>Agende seu atendimento agora mesmo!</p>
-    <form action="#" method="post">
-      <input type="text" name="name" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <input type="tel" name="phone" placeholder="Seu Telefone" required>
-      <textarea name="message" placeholder="Sua Mensagem"></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-    <p>Ou fale conosco pelo WhatsApp: <a href="https://wa.me/554996492573">Clique Aqui</a></p>
-  </section>
-
   <footer>
-    <p>&copy; 2024 Essence Studio - Tati Goellner. Todos os direitos reservados.  - Desenvolvido por <i><a style="color: red;" href="https://www.instagram.com/sergiobole/">@SergioBole</a></i></p>
+    <p>Entre em contato:</p>
+    <p>WhatsApp: <a href="https://wa.me/554996492573" class="text-light">+55 54 99649-2573</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/essence_studio_lash" class="text-light">@essence_studio_lash</a></p>
+    <p>&copy; 2024 Essence Studio - Tati Goellner</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
